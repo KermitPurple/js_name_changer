@@ -1,0 +1,25 @@
+{
+  "name": "js_name_changer",
+  "version": "1.0.0",
+  "description": "Change the name of a user using a discord bot",
+  "main": "name_changer.js",
+  "scripts": {
+    "start": "node name_changer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KermitPurple/js_name_changer.git"
+  },
+  "author": "Shane McDonough (kermitpurple)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KermitPurple/js_name_changer/issues"
+  },
+  "homepage": "https://github.com/KermitPurple/js_name_changer#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "node-random-name": "^1.0.1"
+  }
+}
