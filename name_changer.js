@@ -13,8 +13,11 @@ client.on('ready', async()=>{
     console.log(`Logged in as ${client.user.tag}`);
     guild = await client.guilds.fetch(process.env.GUILD_ID);
     member = await guild.members.fetch(process.env.USER_ID);
-    console.log(guild);
-    console.log(member);
 });
+
+setInterval(()=>{
+    if(member)
+        member.setNickname(RandomName(name_options));
+}, 5000);
 
 client.login(process.env.TOKEN)
