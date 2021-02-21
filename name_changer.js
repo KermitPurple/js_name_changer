@@ -15,9 +15,17 @@ client.on('ready', async()=>{
     member = await guild.members.fetch(process.env.USER_ID);
 });
 
+function get_random_name(){
+    while(1){
+        let name = RandomName(name_options);
+        if(name !== "David")
+            return name
+    }
+}
+
 setInterval(()=>{
     if(member)
-        member.setNickname(RandomName(name_options));
+        member.setNickname(get_random_name());
 }, 5000);
 
 client.login(process.env.TOKEN)
